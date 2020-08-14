@@ -1,0 +1,137 @@
+#main .container {
+  width: 1300px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+#main #mainVisual {
+  position: relative;
+  background: url("../images/main/main_visual_01.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+#main #mainVisual .slogan {
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#main #mainVisual .slogan p {
+  line-height: 70px;
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+#main #mainVisual .slogan p strong {
+  display: block;
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+#main #mainVisual .img {
+  height: 100vh;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+#main #mainVisual .img ul li {
+  background: url("../images/main/icon_plus.png") no-repeat 50%;
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  position: absolute;
+}
+
+#main #mainVisual .img ul li:before {
+  content: '';
+  display: block;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  -webkit-animation: swell 4s linear  infinite;
+          animation: swell 4s linear  infinite;
+}
+
+#main #mainVisual .img ul li:after {
+  content: '';
+  display: block;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  -webkit-animation: swell 6s linear 6s infinite;
+          animation: swell 6s linear 6s infinite;
+}
+
+#main #mainVisual .img ul li:nth-child(1) {
+  bottom: 200px;
+  left: 28%;
+}
+
+#main #mainVisual .img ul li:nth-child(2) {
+  bottom: 150px;
+  left: 35%;
+}
+
+#main #mainVisual .img ul li:nth-child(3) {
+  bottom: 200px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#main #mainVisual .img ul li:nth-child(4) {
+  bottom: 150px;
+  left: 65%;
+}
+
+#main #mainVisual .img ul li:nth-child(5) {
+  bottom: 150px;
+  left: 75%;
+}
+
+@-webkit-keyframes swell {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  20% {
+    background-color: rgba(26, 151, 142, 0.5);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+  }
+}
+
+@keyframes swell {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  20% {
+    background-color: rgba(26, 151, 142, 0.5);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+  }
+}

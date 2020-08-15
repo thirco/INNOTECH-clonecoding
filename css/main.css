@@ -2,17 +2,51 @@
   width: 1300px;
   height: 100vh;
   margin: 0 auto;
+  position: relative;
 }
 
-#main #mainVisual {
+#main .contents .txtBox {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+#main .contents .txtBox h2 {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+#main .contents .txtBox p {
+  padding: 30px 0 70px;
+  font-size: 2.2rem;
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+#main .contents .txtBox .more {
+  display: inline-block;
+  width: 170px;
+  height: 56px;
+  line-height: 56px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  font-size: 1.4rem;
+}
+
+#main .mainVisual {
   position: relative;
-  background: url("../images/main/main_visual_01.jpg") no-repeat center;
+  background: url("../images/main/mainVisual.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
   width: 100%;
 }
 
-#main #mainVisual .slogan {
+#main .mainVisual .slogan {
   display: block;
   width: 100%;
   text-align: center;
@@ -21,29 +55,26 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-}
-
-#main #mainVisual .slogan p {
   line-height: 70px;
   font-size: 2.2rem;
   font-weight: 300;
   color: #fff;
 }
 
-#main #mainVisual .slogan p strong {
+#main .mainVisual .slogan strong {
   display: block;
   font-size: 6rem;
   font-weight: 600;
 }
 
-#main #mainVisual .img {
+#main .mainVisual .img {
   height: 100vh;
   position: relative;
   left: 0;
   top: 0;
 }
 
-#main #mainVisual .img ul li {
+#main .mainVisual .img li {
   background: url("../images/main/icon_plus.png") no-repeat 50%;
   width: 32px;
   height: 32px;
@@ -51,7 +82,7 @@
   position: absolute;
 }
 
-#main #mainVisual .img ul li:before {
+#main .mainVisual .img li:before {
   content: '';
   display: block;
   border-radius: 100%;
@@ -60,11 +91,11 @@
   position: absolute;
   top: -25px;
   left: -25px;
-  -webkit-animation: swell 4s linear  infinite;
-          animation: swell 4s linear  infinite;
+  -webkit-animation: swell 3s linear 0s infinite backwards;
+          animation: swell 3s linear 0s infinite backwards;
 }
 
-#main #mainVisual .img ul li:after {
+#main .mainVisual .img li:after {
   content: '';
   display: block;
   border-radius: 100%;
@@ -73,35 +104,106 @@
   position: absolute;
   top: -25px;
   right: -25px;
-  -webkit-animation: swell 6s linear 6s infinite;
-          animation: swell 6s linear 6s infinite;
+  -webkit-animation: swell 3s linear 1.2s infinite backwards;
+          animation: swell 3s linear 1.2s infinite backwards;
 }
 
-#main #mainVisual .img ul li:nth-child(1) {
+#main .mainVisual .img li:nth-child(1) {
   bottom: 200px;
   left: 28%;
 }
 
-#main #mainVisual .img ul li:nth-child(2) {
+#main .mainVisual .img li:nth-child(2) {
   bottom: 150px;
   left: 35%;
 }
 
-#main #mainVisual .img ul li:nth-child(3) {
+#main .mainVisual .img li:nth-child(3) {
   bottom: 200px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
-#main #mainVisual .img ul li:nth-child(4) {
+#main .mainVisual .img li:nth-child(4) {
   bottom: 150px;
   left: 65%;
 }
 
-#main #mainVisual .img ul li:nth-child(5) {
+#main .mainVisual .img li:nth-child(5) {
   bottom: 150px;
   left: 75%;
+}
+
+#main .product {
+  height: 100vh;
+  background: url("../images/main/bgProduct.jpg") no-repeat 50%;
+  background-size: cover;
+}
+
+#main .product ul {
+  overflow: hidden;
+}
+
+#main .product ul li .txtBox {
+  color: #333;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#main .product ul li .txtBox h2 {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #333;
+}
+
+#main .product ul li .txtBox p {
+  padding: 30px 0 70px;
+  font-size: 2rem;
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+#main .product ul li .txtBox .more {
+  display: inline-block;
+  width: 170px;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  border-top: 1px solid rgba(51, 51, 51, 0.5);
+  border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+  font-size: 1.4rem;
+}
+
+#main .product ul li img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#main .quality {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/main/bgQuality.jpg") no-repeat 50%;
+  background-size: cover;
+}
+
+#main .history {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/main/bgHistory.jpg") no-repeat 50%;
+  background-size: cover;
+}
+
+#main .facility {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/main/bgFacility.jpg") no-repeat 50%;
+  background-size: cover;
 }
 
 @-webkit-keyframes swell {

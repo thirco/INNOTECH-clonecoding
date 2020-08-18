@@ -230,16 +230,16 @@ a {
   color: #fff;
 }
 
-#header .language.click {
+#header .language.down {
   background-color: #0c1015;
 }
 
-#header .language.click > a i {
+#header .language.down > a i {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-#header .language.click > a:after {
+#header .language.down > a:after {
   content: '';
   display: block;
   height: 1px;
@@ -247,7 +247,7 @@ a {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-#header .language.click ul {
+#header .language.down ul {
   display: block;
 }
 

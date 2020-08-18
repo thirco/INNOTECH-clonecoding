@@ -16,9 +16,9 @@
 
 #main .mainVisual .img { height: 100vh; position: relative; left: 0; top: 0; }
 
-#main .mainVisual .img li { background: url("../images/main/icon_plus.png") no-repeat 50%; width: 32px; height: 32px; border-radius: 32px; position: absolute; }
+#main .mainVisual .img li { width: 32px; height: 32px; border-radius: 32px; position: absolute; }
 
-#main .mainVisual .img li:before { content: ''; display: block; border-radius: 100%; width: 80px; height: 80px; position: absolute; top: -25px; left: -25px; -webkit-animation: swell 3s linear 0s infinite backwards; animation: swell 3s linear 0s infinite backwards; }
+#main .mainVisual .img li:before { content: ''; display: block; border-radius: 100%; width: 80px; height: 80px; position: absolute; top: -30px; left: -25px; -webkit-animation: swell 3s linear 0s infinite backwards; animation: swell 3s linear 0s infinite backwards; }
 
 #main .mainVisual .img li:after { content: ''; display: block; border-radius: 100%; width: 80px; height: 80px; position: absolute; top: -25px; right: -25px; -webkit-animation: swell 3s linear 1.2s infinite backwards; animation: swell 3s linear 1.2s infinite backwards; }
 

@@ -75,7 +75,6 @@
 }
 
 #main .mainVisual .img li {
-  background: url("../images/main/icon_plus.png") no-repeat 50%;
   width: 32px;
   height: 32px;
   border-radius: 32px;
@@ -89,7 +88,7 @@
   width: 80px;
   height: 80px;
   position: absolute;
-  top: -25px;
+  top: -30px;
   left: -25px;
   -webkit-animation: swell 3s linear 0s infinite backwards;
           animation: swell 3s linear 0s infinite backwards;
